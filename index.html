@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #201c1c;
+        }
+        table{
+            /* border: 1px solid #ccc; */
+        }
+        th,td{
+            border: 1px solid #ccc;
+        }
+        caption{
+            margin-bottom: 20px;
+        }
+        td,th{
+            padding: 10px;
+        }
+        h1,table{
+            color: rgb(200, 200, 200);
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: auto;
+            text-align: center;
+            margin: 50px auto;
+        }
+    
+        .info td{
+            color: red;
+            font-size: 25px;
+            background-color: red;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <!--TR:TABLE ROW:PARA CADA FILA
+        TD:TABLE DATA:PARA CELDAS
+        TH:TABLE HEAD: PARA CELDAS TITULADAS
+    -->
+    <h1>MOSTRANDO PROPIEDADES DEL FORM</h1>
+    <div class="conteiner">
+        <table>
+            <caption>Mostrando todas las etiquetas del formulario</caption>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Etiquetas</th>
+                    <th>Informacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="8">Formulario</th>
+                </tr>
+                <tr>
+                    <td>Form</td>
+                    <td>Funciona como contenedor que posee metodos de envio a una bbdd</td>
+                </tr>
+                <tr>
+                    <td>fieldset</td>
+                    <td>Sirve para agrupar secciones dentro de un form</td>
+                </tr>
+                <tr>
+                    <td>legend</td>
+                    <td>Titulo de un fieldset en especifico</td>
+                </tr>
+                <tr>
+                    <td>Buttom</td>
+                    <td>Envia los valores al form y puede contener codigo html</td>
+                </tr>
+                <tr>
+                    <td>Select</td>
+                    <td>Para crear una lista desplegable</td>
+                </tr>
+                <tr>
+                    <td>textarea</td>
+                    <td>Para crear mensajes grandes de texto</td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Sirve como entrada de datos, tiene multiples tipos</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table>
+            <caption>Mostrando todos los tipos de Input</caption>
+            <colgroup>
+            <colgroup>
+            <colgroup>
+            <colgroup class="info">
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Tipo</th>
+                    <th>Vista</th>
+                    <th>Informacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="23">Input:Type</th>
+                </tr>
+                <tr>
+                    <td>Button</td>
+                    <td><input type="button" value="Boton"></td>
+                    <td>Sirve para crear un simple boton, sin funcion implicita de envio</td>
+                </tr>
+                <tr>
+                    <td>CheckBox</td>
+                    <td>
+                        <label for="first">A</label>
+                        <input type="checkbox" name="" id="first" value="a">
+                        <label for="second">B</label>
+                        <input type="checkbox" name="" id="second" value="b">
+                    </td>
+                    <td>Para crear cuadriculas de seleccion multiple</td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td><input type="color"></td>
+                    <td>Para seleccionar un color</td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td><input type="date" name="" id=""></td>
+                    <td>Para Especificar una fecha DIA, MES , AÑO</td>
+                </tr>
+                <tr>
+                    <td>Datetime-local</td>
+                    <td><input type="datetime-local" name="" id=""></td>
+                    <td>Para especificar una fecha DATE,MONTH,YEAR, HOUR,MIN</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="" id="" placeholder="Your Email here"></td>
+                    <td>Para ingresar un correo</td>
+                </tr>
+                <tr>
+                    <td>File</td>
+                    <td><input type="file" name="" id=""></td>
+                    <td>Para subir un archivo</td>
+                </tr>
+                <tr>
+                    <td>Hidden</td>
+                    <td><input type="hidden" name=""></td>
+                    <td>Permite incluir datos que los usuarios no puedan ver al momento de enviar</td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td><input type="image" src="http://lorempixel.com/100/50/" alt=""></td>
+                    <td>Para mostrar una imagen usando un input</td>
+                </tr>
+                <tr>
+                    <td>Month</td>
+                    <td><input type="month" name="" id=""></td>
+                    <td>Seleccionar Mes y Año</td>
+                </tr>
+                <tr>
+                    <td>Number</td>
+                    <td><input type="number" name="" id="" placeholder="Your Numer here"></td>
+                    <td>Para ingresar valores numeros y "e"</td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="" id="" placeholder="Your password here"></td>
+                    <td>Para las contraseñas</td>
+                </tr>
+                <tr>
+                    <td>Radio</td>
+                    <td>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" name="genero" id="hombre" value="Hombre">
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" name="genero" id="mujer" value="Mujer">
+                    </td>
+                    <td>Para seleccionar una opcion de muchas</td>
+                </tr>
+                <tr>
+                    <td>Range</td>
+                    <td><input type="range" name="" id="" step="5"></td>
+                    <td>Usado para mostrar porcentaje o rango de habilidad</td>
+                </tr>
+                <tr>
+                    <td>Reset</td>
+                    <td><input type="reset" value=""></td>
+                    <td>Resetea los valores de un formulario, !EVITAR USARLOS-ES FRUSTRANTE! clickear por accidente</td>
+                </tr>
+                <tr>
+                    <td>Search</td>
+                    <td><input type="search" name="q" id="" placeholder="Buscar"></td>
+                    <td>Buscar un dato en algun sitio</td>
+                </tr>
+                <tr>
+                    <td>Submit</td>
+                    <td><input type="submit" value="Enviar"></td>
+                    <td>Para enviar los datos de un formulario</td>
+                </tr>
+                <tr>
+                    <td>Tel</td>
+                    <td><input type="tel" name="" id="" placeholder="anyTelphone"></td>
+                    <td>Para ingresar numeros telefonicos</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                    <td><input type="text" name="" id="" placeholder="anyText"></td>
+                    <td>Para ingresar cadenas de texto</td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td><input type="time" name="" id=""></td>
+                    <td>Para ingresar la hora</td>
+                </tr>
+                <tr>
+                    <td>Url</td>
+                    <td><input type="url" name="" id="" placeholder="anyURL"></td>
+                    <td>Para ingresar una url</td>
+                </tr>
+                <tr>
+                    <td>Week</td>
+                    <td><input type="week" name="" id=""></td>
+                    <td>Para buscar por semanas</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="#" target="_blank" method="GET">
+            <label for=""><input type="email" name="email" id=""></label>
+            <label for=""><input type="text" name="texto" id=""></label>
+            <input type="submit" value="input:submit"><!--ENVIA LOS VALORES DEL FORM-->
+            <input type="button" value="input:btn"><!--Solo crea un boton-->
+            <button type="submit">button:submit</button><!--ENVIA LOS VALORES DEL FORM-->
+            <button>button</button><!--ENVIA LOS VALORES DEL FORM Y PUEDE CONTENER CONTENIDO HTML-->
+        </form> 
+   </div>
+</body>
+</html>
