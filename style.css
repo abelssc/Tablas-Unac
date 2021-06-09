@@ -1,0 +1,23 @@
+body{
+    background-color: #222;
+}
+table{
+    /* border: 1px solid #ccc; */
+}
+th,td{
+    border: 1px solid rgb(50, 50, 50);
+}
+caption{
+    margin-bottom: 20px;
+}
+td,th{
+    padding: 10px;
+}
+h1,table{
+    color: #f9f9f9;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    text-align: center;
+    margin: 50px auto;
+}
